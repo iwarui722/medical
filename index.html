@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+<body>
+  <style>
+.carousel-inner{
+  height: 80vh;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
+* {
+  box-sizing: border-box;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 20%;
+  padding:  5px;
+  }
+
+/* Remove extra left and right margins, due to padding */
+.row {
+  display: flex;
+  }
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;   
+  clear: both;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 15px;
+  text-align: center;
+  background-color: white;
+}
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+body{
+  background-color: burlywood;
+}
+.header1{
+  color: darkred;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h5{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: oblique;
+  font-weight: bolder;
+}
+
+  </style>
+  <div class="container">
+    <h2 class="header1">Medical tourism</h2>  
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+  
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="img/cmedic1.jpg" alt="Los Angeles" style="width:100%;">
+        </div>
+  
+        <div class="item">
+          <img src="img/cmedic2.jpg" alt="Chicago" style="width:100%;">
+        </div>
+      
+        <div class="item">
+          <img src="img/cmedic3.jpg" alt="New york" style="width:100%;">
+        </div>
+      </div>
+  
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    <br>
+    <div class="row">
+      <div class="column">
+        <div class="card">
+      <img src="img/clinic9.png" alt="John" style="width:100%">
+      <h5>SpecMed</h5>
+      <p class="title"></p>
+      <p>The hospital long-term care facility offering general medical services, specialist clinics and diagnostic services. The Hospital receives referrals for specialised medical care and diagnostic services from various hospitals and clinics in the region.</p>
+      <div style="margin: 24px 0;">
+        <a href="#"><i class="fa fa-dribbble"></i></a> 
+        <a href="#"><i class="fa fa-twitter"></i></a>  
+        <a href="#"><i class="fa fa-linkedin"></i></a>  
+        <a href="#"><i class="fa fa-facebook"></i></a> 
+      </div>
+    </div>
+  </div>
+  <div class="column">
+  <div class="card">
+      <img src="img/clinic2.jpg" alt="John" style="width:70%">
+      <h5>International Medical Treatment</h5>
+      <p class="title"></p>
+      <p>The hospital long-term care facility offering general medical services, specialist clinics and diagnostic services. The Hospital receives referrals for specialised medical care and diagnostic services from various hospitals and clinics in the region.</p>
+      <div style="margin: 24px 0;">
+        <a href="#"><i class="fa fa-dribbble"></i></a> 
+        <a href="#"><i class="fa fa-twitter"></i></a>  
+        <a href="#"><i class="fa fa-linkedin"></i></a>  
+        <a href="#"><i class="fa fa-facebook"></i></a> 
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="img/clinic3.png" alt="John" style="width:100%">
+      <h5>Apollo Hospitals</h5>
+      <p class="title"></p>
+      <p>The hospital long-term care facility offering general medical services, specialist clinics and diagnostic services. The Hospital receives referrals for specialised medical care and diagnostic services from various hospitals and clinics in the region.</p>
+      <div style="margin: 24px 0;">
+        <a href="#"><i class="fa fa-dribbble"></i></a> 
+        <a href="#"><i class="fa fa-twitter"></i></a>  
+        <a href="#"><i class="fa fa-linkedin"></i></a>  
+        <a href="#"><i class="fa fa-facebook"></i></a> 
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="img/clinic4.png" alt="John" style="width:100%">
+      <h5>Smile Medtour</h5>
+      <p class="title"></p>
+      <p>The hospital long-term care facility offering general medical services, specialist clinics and diagnostic services. The Hospital receives referrals for specialised medical care and diagnostic services from various hospitals and clinics in the region.</p>
+      <div style="margin: 24px 0;">
+        <a href="#"><i class="fa fa-dribbble"></i></a> 
+        <a href="#"><i class="fa fa-twitter"></i></a>  
+        <a href="#"><i class="fa fa-linkedin"></i></a>  
+        <a href="#"><i class="fa fa-facebook"></i></a> 
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="img/clinic6.jpg" alt="John" style="width:100%">
+      <h5>Medtour Assist</h5>
+      <p class="title"></p>
+      <p>The hospital long-term care facility offering general medical services, specialist clinics and diagnostic services. The Hospital receives referrals for specialised medical care and diagnostic services from various hospitals and clinics in the region.</p>
+      <div style="margin: 24px 0;">
+        <a href="#"><i class="fa fa-dribbble"></i></a> 
+        <a href="#"><i class="fa fa-twitter"></i></a>  
+        <a href="#"><i class="fa fa-linkedin"></i></a>  
+        <a href="#"><i class="fa fa-facebook"></i></a> 
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="row">
+    <div class="column">
+    <div class="card">
+      <img src="img/aga.png" alt="John" style="width:45%">
+      <h5>Aga Khan University Hospital</h5>
+      <p class="title"></p>
+      <p> Aga Khan University is a long-term care facility offering general medical services, specialist clinics and diagnostic services. The Hospital receives referrals for specialised medical care and diagnostic services from various hospitals and clinics in the region.</p>
+      <div style="margin: 24px 0;">
+        <a href="#"><i class="fa fa-dribbble"></i></a> 
+        <a href="#"><i class="fa fa-twitter"></i></a>  
+        <a href="#"><i class="fa fa-linkedin"></i></a>  
+        <a href="#"><i class="fa fa-facebook"></i></a> 
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="img/clinic3.jpeg" alt="John" style="width:90%">
+      <h5>Meximed Africa Limited</h5>
+      <p class="title"></p>
+      <p>Meximed Africa is a long-term care facility offering general medical services.It receives referrals for specialised medical care from various hospitals and clinics in the region.</p>
+      <div style="margin: 24px 0;">
+        <a href="#"><i class="fa fa-dribbble"></i></a> 
+        <a href="#"><i class="fa fa-twitter"></i></a>  
+        <a href="#"><i class="fa fa-linkedin"></i></a>  
+        <a href="#"><i class="fa fa-facebook"></i></a> 
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="img/clinic6.jpg" alt="John" style="width:100%">
+      <h5>Medtour Assist</h5>
+      <p class="title"></p>
+      <p>Medtour Assist is  care facility offering general medical services. It receives referrals for specialised medical care and diagnostic services from various hospitals and clinics in the region.</p>
+      <div style="margin: 24px 0;">
+        <a href="#"><i class="fa fa-dribbble"></i></a> 
+        <a href="#"><i class="fa fa-twitter"></i></a>  
+        <a href="#"><i class="fa fa-linkedin"></i></a>  
+        <a href="#"><i class="fa fa-facebook"></i></a> 
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="img/clinic7.png" alt="John" style="width:90%">
+      <h5>Nexus Medical LTD</h5>
+      <p class="title"></p>
+      <p>Nexus Medical ltd is long-term care facility offering  diagnostic services. The Hospital receives referrals for  diagnostic services from various hospitals and clinics in the region.</p>
+      <div style="margin: 24px 0;">
+        <a href="#"><i class="fa fa-dribbble"></i></a> 
+        <a href="#"><i class="fa fa-twitter"></i></a>  
+        <a href="#"><i class="fa fa-linkedin"></i></a>  
+        <a href="#"><i class="fa fa-facebook"></i></a> 
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="img/clinic8.png" alt="John" style="width:100%">
+      <h5>Pathway International</h5>
+      <p class="title"></p>
+      <p>Pathway International is a long-term care facility offering specialist clinics and diagnostic services. The Hospital receives referrals for specialised medical care and diagnostic services from various hospitals and clinics in the region.</p>
+      <div style="margin: 24px 0;">
+        <a href="#"><i class="fa fa-dribbble"></i></a> 
+        <a href="#"><i class="fa fa-twitter"></i></a>  
+        <a href="#"><i class="fa fa-linkedin"></i></a>  
+        <a href="#"><i class="fa fa-facebook"></i></a> 
+      </div>
+    </div>
+  </div>
+ 
+  
+  </div>
+  <nav aria-label="Page navigation">
+    <ul class="pagination">
+        <li>
+            <a href="#" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+            </a>
+        </li>
+        <li><a href="index.html ">1</a></li>
+        <li><a href="recreation.html ">2</a></li>
+        <li><a href="https://vincentnjoroge.github.io/projee/ ">3</a></li>
+        <li><a href="pleasure.html ">4</a></li>
+        <li><a href="https://kelvinjoshua.github.io/sportstourism/ ">5</a></li>
+        <li>
+            <a href="https://kelvinjoshua.github.io/rel/ ">6</a>
+        </li>
+        <li>
+            <a href="medical.html ">7</a>
+        </li>
+        <li>
+            <a href="adventure.html ">8</a>
+        </li>
+        <li>
+            <a href="#" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+            </a>
+        </li>
+    </ul>
+</nav>
+
+
+
+  </div>
+
+
+
+
+  
+</body>
+</html>
